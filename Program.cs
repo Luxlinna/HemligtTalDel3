@@ -22,12 +22,12 @@ namespace HemligtTalDel3
                     if (gissa_tal > slump_tal)
                     {
                         Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.WriteLine("Det är högre ! gissa lägre talet...");
+                        Console.WriteLine("Det är högre än det framslumpade talet ! gissa lägre talet...");
                     }
                     else if (gissa_tal < slump_tal)
                     {
                         Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.WriteLine("Det är lägre ! gissa högre talet...");
+                        Console.WriteLine("Det är lägre än det framslumpade talet ! gissa högre talet...");
                     }
                     else if (gissa_tal == slump_tal)
                     {
