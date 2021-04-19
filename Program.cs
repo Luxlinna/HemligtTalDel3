@@ -21,14 +21,30 @@ namespace HemligtTalDel3
                     i++;
 
                     if (gissa_tal > slump_tal)
-                    {
-                        Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.WriteLine("Det är högre än det framslumpade talet ! gissa lägre talet...");
+                    {   
+                        if (gissa_tal == slump_tal + 1)
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            Console.WriteLine("Du är väldigt nära framslumpade talet !!!");
+                        } 
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("Det är högre än det framslumpade talet ! gissa lägre talet...");
+                        }    
                     }
                     else if (gissa_tal < slump_tal)
                     {
-                        Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.WriteLine("Det är lägre än det framslumpade talet ! gissa högre talet...");
+                        if (gissa_tal == slump_tal -1)
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            Console.WriteLine("Du är väldigt nära framslumpade talet !!!");
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("Det är lägre än det framslumpade talet ! gissa högre talet...");
+                        } 
                     }
                     else if (gissa_tal == slump_tal)
                     {
@@ -36,12 +52,7 @@ namespace HemligtTalDel3
                         Console.WriteLine("Du vinner !!!");
                         Console.Write("Du försöker gissa {0} gånger", i);
                         break;
-                    } 
-                    else if (gissa_tal == slump_tal + 1 || gissa_tal == slump_tal -1)
-                    {
-                        Console.ForegroundColor = ConsoleColor.DarkRed;
-                        Console.WriteLine("Du är väldigt nära framslumpade talet !!!");
-                    }
+                    }   
                 }
                 catch (FormatException e)
                 {
@@ -49,7 +60,7 @@ namespace HemligtTalDel3
                     Console.WriteLine(e.Message);
                 }
 
-            } while (i != 10);
+            } while (i < 10);
 
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.Write("\nSkriva valfri tangent för att fortsätta ... ");
