@@ -1,0 +1,15 @@
+/Users/luxlinna/Hermods/HemligtTalDel3/bin/Debug/net5.0/HemligtTalDel3.deps.json
+/Users/luxlinna/Hermods/HemligtTalDel3/bin/Debug/net5.0/HemligtTalDel3.runtimeconfig.json
+/Users/luxlinna/Hermods/HemligtTalDel3/bin/Debug/net5.0/HemligtTalDel3.runtimeconfig.dev.json
+/Users/luxlinna/Hermods/HemligtTalDel3/bin/Debug/net5.0/HemligtTalDel3.dll
+/Users/luxlinna/Hermods/HemligtTalDel3/bin/Debug/net5.0/ref/HemligtTalDel3.dll
+/Users/luxlinna/Hermods/HemligtTalDel3/bin/Debug/net5.0/HemligtTalDel3.pdb
+/Users/luxlinna/Hermods/HemligtTalDel3/obj/Debug/net5.0/HemligtTalDel3.csprojAssemblyReference.cache
+/Users/luxlinna/Hermods/HemligtTalDel3/obj/Debug/net5.0/HemligtTalDel3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luxlinna/Hermods/HemligtTalDel3/obj/Debug/net5.0/HemligtTalDel3.AssemblyInfoInputs.cache
+/Users/luxlinna/Hermods/HemligtTalDel3/obj/Debug/net5.0/HemligtTalDel3.AssemblyInfo.cs
+/Users/luxlinna/Hermods/HemligtTalDel3/obj/Debug/net5.0/HemligtTalDel3.csproj.CoreCompileInputs.cache
+/Users/luxlinna/Hermods/HemligtTalDel3/obj/Debug/net5.0/HemligtTalDel3.dll
+/Users/luxlinna/Hermods/HemligtTalDel3/obj/Debug/net5.0/ref/HemligtTalDel3.dll
+/Users/luxlinna/Hermods/HemligtTalDel3/obj/Debug/net5.0/HemligtTalDel3.pdb
+/Users/luxlinna/Hermods/HemligtTalDel3/obj/Debug/net5.0/HemligtTalDel3.genruntimeconfig.cache
