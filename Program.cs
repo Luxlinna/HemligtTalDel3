@@ -8,8 +8,8 @@ namespace HemligtTalDel3
         {
             Random randomerare = new Random();
             int slump_tal = randomerare.Next(1,101);
-            int gissa_tal = 0;
-            bool vinst = false;
+            int gissa_tal;
+            int i = 0;
 
             do 
             {
@@ -18,22 +18,29 @@ namespace HemligtTalDel3
                     Console.ForegroundColor = ConsoleColor.DarkGreen;
                     Console.Write("\n Skriva in ditt gissa talet från 1 till 100: ");
                     gissa_tal = Convert.ToInt32(Console.ReadLine());
+                    i++;
 
                     if (gissa_tal > slump_tal)
                     {
                         Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.WriteLine("Det är högre ! gissa lägre talet...");
+                        Console.WriteLine("Det är högre än det framslumpade talet ! gissa lägre talet...");
                     }
                     else if (gissa_tal < slump_tal)
                     {
                         Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.WriteLine("Det är lägre ! gissa högre talet...");
+                        Console.WriteLine("Det är lägre än det framslumpade talet ! gissa högre talet...");
                     }
                     else if (gissa_tal == slump_tal)
                     {
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
                         Console.WriteLine("Du vinner !!!");
-                        vinst = true;
+                        Console.Write("Du försöker gissa {0} gånger", i);
+                        break;
+                    } 
+                    else if (gissa_tal == slump_tal + 1 || gissa_tal == slump_tal -1)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("Du är väldigt nära framslumpade talet !!!");
                     }
                 }
                 catch (FormatException e)
@@ -42,7 +49,7 @@ namespace HemligtTalDel3
                     Console.WriteLine(e.Message);
                 }
 
-            } while (vinst == false);
+            } while (i != 10);
 
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.Write("\nSkriva valfri tangent för att fortsätta ... ");
